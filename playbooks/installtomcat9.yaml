@@ -12,10 +12,10 @@
     - name: Tomcat-9 Installation
       get_url:
         url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
-        dest: /tmp/
+        dest: /opt/
     - name: copy
       copy:
-        src: /tmp/apache-tomcat-9.0.70.tar.gz
+        src: /opt/apache-tomcat-9.0.70.tar.gz
         dest: /usr/local/
         remote_src: yes
     - name: Unpacking the archive
