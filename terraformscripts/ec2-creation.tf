@@ -9,7 +9,7 @@ resource "aws_instance" "AWSEC2Instance"{
      security_groups = ["launch-wizard-5"]
      key_name        = "AWS"
      tags = {
-        Name = "tomcatservers"
+        Name = "tomcatserver"
      }
 }
 
